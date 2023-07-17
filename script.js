@@ -12,20 +12,27 @@ class Person {
 		this.name=value;
 	}
 }
+var person = new Person("Rahul",28);
 
 class Student extends Person {
-	super(name,age);
+	constructor(name, age) {
+        super(name, age);
+      }
 	study(){
-		return this.name + " is studing."
+		//return this.name + " is studing."
+        console.log(this.name + " is studing.");
 	}
 }
 var student = new Student("Saksham",15);
 student.study();
 
 class Teacher extends Person {
-	 super(name,age);
+    constructor(name, age) {
+        super(name, age);
+      }
 	teach(){
-		return this.name + " is teaching."
+		//return this.name + " is teaching."
+        console.log(this.name + " is teaching.");
 	}
 }
    
