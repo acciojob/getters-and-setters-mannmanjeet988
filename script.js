@@ -5,11 +5,11 @@ class Person {
 		this.age=age;
 	}
 	get myName(){
-		return this.name;
+		return this._name;
 	}
 
 	set myName(value){
-		this.name=value;
+		this._name=value;
 	}
 }
 var person = new Person("Rahul",28);
@@ -20,7 +20,7 @@ class Student extends Person {
       }
 	study(){
 		//return this.name + " is studing."
-        console.log(this.name + " is studing.");
+        console.log(this._name + " is studing.");
 	}
 }
 var student = new Student("Saksham",15);
@@ -32,7 +32,7 @@ class Teacher extends Person {
       }
 	teach(){
 		//return this.name + " is teaching."
-        console.log(this.name + " is teaching.");
+        console.log(this._name + " is teaching.");
 	}
 }
    
